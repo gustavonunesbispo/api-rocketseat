@@ -5,7 +5,7 @@ class NotesController{
     const { title, description, tags, links } = request.body;
     const { user_id } = request.params;
 
-    const [note_id] = await knex("notes").insert({
+    const [ note_id ] = await knex("notes").insert({
       title,
       description,
       user_id
@@ -34,4 +34,4 @@ class NotesController{
   }
 };
 
-module.exports = NotesController
+module.exports = NotesController;

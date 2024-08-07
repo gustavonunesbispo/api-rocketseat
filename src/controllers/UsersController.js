@@ -2,7 +2,7 @@ const { hash, compare } = require("bcryptjs");
 
 const AppError = require("../utils/AppError");
 
-const sqliteConnection = require("../database/sqlite")
+const sqliteConnection = require("../database/sqlite");
 
 class UsersController {
   async create(request, response) {
@@ -70,4 +70,4 @@ class UsersController {
   }
 };
 
-module.exports = UsersController
+module.exports = UsersController;
